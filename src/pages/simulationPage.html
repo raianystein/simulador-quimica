@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="../styles/simulationPage.css" rel="stylesheet">
+    <title>Simulador FisQui - IQ/UFRJ</title>
+    <meta name="description" content="Protótipo de ferramenta virtual para auxiliar estudos e simulações em físico-química">
+    <meta name="author" content="Raiany da Silva Stein">
+    <meta name="keywords" content="química, físico-química, gás ideal, simulação">
+    <meta property="og:title" content="Protótipo de ferramenta virtual para auxiliar estudos e simulações em físico-química">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+    <header>
+        <img src="../assets/images/logo-iq.png"/>
+        <ul>
+            <li>
+                <a href="./initialPage.html">Página Inicial</a>
+                <a href="./home.html">Área de login</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h1>Simulação de processos termodinâmicos reversíveis para gases perfeitos monoatômicos</h1>
+        
+        <div class="select-process">
+            <div>
+                <input type="radio" id="isotermico" name="process" value="isotermico">
+                <label for="isotermico">Processo isotérmico</label>
+            </div>
+            <div>
+                <input type="radio" id="isovolumetrico" name="process" value="isovolumetrico">
+                <label for="isovolumetrico">Processo isovolumétrico</label>
+            </div>
+            <div>
+                <input type="radio" id="isobarico" name="process" value="isobarico">
+                <label for="isobarico">Processo isobárico</label>
+            </div>
+        </div>
+
+        <div class="parameter-input">
+            <div class="box-section1">
+                <input id="initial-pressure" type="number" placeholder="Pressão inicial (atm)" min="1" max="5" step="2">
+                <input id="initial-volume" type="number" placeholder="Volume inicial (L)" min="1" max="50" step="1">
+                <input id="initial-temperature" type="number" placeholder="Temperatura inicial (°C)" min="0" max="300" step="1">
+            </div>
+            <div class="box-section1">
+                <input id="final-pressure" type="number" placeholder="Pressão final (atm)" min="1" max="5" step="2">
+                <input id="final-volume" type="number" placeholder="Volume final (L)" min="1" max="50" step="1">
+                <input id="final-temperature" type="number" placeholder="Temperatura final (°C)" min="0" max="300" step="1">
+            </div>
+        </div>
+        
+        <section class="calculated-parameter">
+            <div class="box-section2">
+                <p class="title">Energia Interna - &#916;U (J)</p>
+                <div id="U">0</div>
+            </div>
+            <div class="box-section2">
+                <p class="title">Trabalho - w (J)</p>
+                <div id="w">0</div>
+            </div>
+            <div class="box-section2">
+                <p class="title">Calor - q (J)</p>
+                <div id="q">0</div>
+            </div>
+        </section>
+
+        <div class="graph">
+            <div class="chart-pv"></div>
+            <div class="chart-pt"></div>
+            <div class="chart-vt"></div>
+        </div>
+        
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

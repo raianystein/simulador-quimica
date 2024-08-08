@@ -1,0 +1,116 @@
+body {
+    background-color: #bfdbf746;
+    margin: 0
+}
+
+header {
+    display: flex;
+    border-bottom: 1.5px solid #BFDBF7;
+    gap: 50px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    
+}
+
+header ul li{
+    display: flex;
+    gap: 70px;
+    margin-right: 100px;
+
+    a {
+        text-decoration: none;
+        padding: 10px 20px;
+        color: #022B3A;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        border: 1px solid white;
+    }
+
+    a:hover {
+        background-color: #022B3A;
+        color: white;
+        border: 1px solid #00171f;
+    }
+    
+}
+
+header img {
+    margin-left: 100px;
+    width: 220px;
+}
+
+img {
+    width: 410px;
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
+main {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.simulation-info {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        color: #012a4a;
+        padding: 10px;
+        font-family:monospace;
+        background-color: rgba(163, 248, 174, 0.596);
+        border-radius: 20px;
+    }
+
+    ul {
+        list-style: none;
+        line-height: 2;
+        list-style-type:circle;
+        position: relative;
+        right: 20px;
+
+        li {margin-top: 10px;}
+    }
+}
+
+button {
+    padding: 0;
+    border: none;
+    margin: 30px auto 10px;
+}
+
+button a {
+    text-decoration: none;
+    color: #E1E5F2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 20px;
+    background-color: #00171f;
+    border: 1px solid #00171f;
+    border-radius: 3px;
+}
+
+button a:hover {
+    background-color: #200003;
+    color: white;
+}

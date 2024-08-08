@@ -1,0 +1,12 @@
+article {
+    width: 1050px;
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+    border: 1px solid #BFDBF7;
+    border-radius: 50px 15px;
+    background-color: #e1e9fab0;
+    color: #021625;
+}
